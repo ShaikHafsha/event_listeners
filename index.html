@@ -26,12 +26,11 @@
     </div>
 
     <script>
-        // Event Listener for button click
+        
         document.getElementById("clickButton").addEventListener("click", function () {
             document.getElementById("message").innerText = "Button clicked!";
         });
 
-        // Event Listener for input field
         document.getElementById("textInput").addEventListener("input", function (event) {
             document.getElementById("inputDisplay").innerText =
                 "You typed: " + event.target.value;
