@@ -26,12 +26,31 @@
     </div>
 
     <script>
-        
+
+        // Click event
         document.getElementById("clickButton").addEventListener("click", function () {
             document.getElementById("message").innerText = "Button clicked!";
         });
 
+        // Input event
         document.getElementById("textInput").addEventListener("input", function (event) {
             document.getElementById("inputDisplay").innerText =
                 "You typed: " + event.target.value;
         });
+
+        // Mouse hover event
+        document.getElementById("hoverBox").addEventListener("mouseover", function () {
+            this.style.backgroundColor = "lightgreen";
+            this.innerText = "Mouse is over the box!";
+        });
+
+        // Mouse leave event
+        document.getElementById("hoverBox").addEventListener("mouseout", function () {
+            this.style.backgroundColor = "lightblue";
+            this.innerText = "Hover over this box";
+        });
+
+    </script>
+
+</body>
+</html>
